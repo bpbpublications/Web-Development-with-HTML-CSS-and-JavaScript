@@ -1,0 +1,77 @@
+/* Base Styles: Mobile-First */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid orange
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Query for Tablets and Desktops */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 1rem 2rem;
+    }
+
+    footer {
+        position: static;
+    }
+
+    main {
+        margin: 0 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,24 @@
+// Variables: Define reusable values for colors and fonts
+$primary-color: #3498db;           // A blue color for primary elements
+$secondary-color: #2ecc71;         // A green color for secondary elements
+$font-stack: Arial, sans-serif;      // A font stack that defaults to Arial
+
+// Mixin: A reusable block of styles for buttons, with a parameter for background color
+@mixin button-style($bg-color) {
+  background-color: $bg-color;     // Set the background color to the value passed in
+  padding: 10px 20px;              // Add padding inside the button
+  border: none;                    // Remove any default border
+  border-radius: 5px;              // Round the corners of the button
+  color: white;                  // Set the text color to white
+  cursor: pointer;                 // Change the cursor to a pointer (hand) when hovering
+  font-family: $font-stack;        // Use the defined font stack for the button's text
+}
+
+// Nesting and using the mixin
+.button {
+  @include button-style($primary-color);   // Apply the button mixin with the primary color
+
+  &:hover {
+    @include button-style($secondary-color);  // Change the button style to the secondary color on hover
+  }
+}

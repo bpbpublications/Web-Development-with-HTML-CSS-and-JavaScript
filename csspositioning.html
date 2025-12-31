@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Examples</title>
+
+    <style>
+
+        .normal-box {
+            background-color: aqua;
+            padding: 20px;
+            margin-top: 44px; /* Spacing to visualize flow */
+            border: 2px solid blue; /* Added border for visibility */
+            width: 100px; /* Fixed width for clarity */
+        }
+
+        .relative-box {
+            position: relative;
+            background-color: lightblue;
+            padding: 20px;
+            top: 20px; /* Moves down 20px from original position */
+            border: 2px solid blue; /* Added border for visibility */
+            width: 100px; /* Fixed width for clarity */
+        }
+
+        .absolute-box {
+            position: absolute;
+            background-color: lightgreen;
+            padding: 20px;
+            top: 66px; /* Positioned 66px from the top of the viewport */
+            left: 50px; /* Positioned 50px from the left of the viewport */
+            border: 2px solid blue; /* Added border for visibility */
+            width: 100px; /* Fixed width for clarity */
+        }
+
+        .fixed-box {
+            position: fixed;
+            background-color: lightcoral;
+            padding: 20px;
+            top: 240px; /* Stays 220px from the top of the viewport */
+            right: 20px; /* Stays 20px from the right of the viewport */
+            border: 2px solid blue; /* Added border for visibility */
+            width: 300px; /* Fixed width for clarity */
+
+    </style>
+</head>
+
+<body>
+    <div class="normal-box">Normal Box Element</div>
+    <div class="relative-box">Relative Box Element</div>
+
+    <div class="absolute-box">Absolute Box Element</div>
+    <div class="fixed-box">Fixed Box Element</div>
+
+</body>
+</html>

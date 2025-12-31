@@ -1,0 +1,20 @@
+.button {
+  background-color: #3498db;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+.button:hover {
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+/*# sourceMappingURL=sass.css%23.map */

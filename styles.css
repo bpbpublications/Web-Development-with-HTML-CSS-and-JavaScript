@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:orange;
+    margin: 20;
+}
+
+fieldset {
+    border: 0px solid ;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: gold;
+    border-radius: 4px; /* Rounded corners for the fieldset */
+}
+
+legend {
+    background-color: gold; /*  background */
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional: rounded corners */
+    font-weight: bold;
+}

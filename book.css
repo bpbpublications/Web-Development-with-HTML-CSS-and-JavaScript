@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:orange;
+    margin: 20px;
+}
+
+fieldset {
+    border: 0px solid ;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: gold;
+    border-radius: 4px; /* Rounded corners for the fieldset */
+}
+
+legend {
+    background-color: gold; /*  background */
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional: rounded corners */
+    font-weight: bold;
+}
+
+input {
+    width: 100%;                                /* Makes the input and textarea fields take the full width */
+    padding: 4px;                               /* Adds padding inside the input field */
+    border: 1px solid darkorange;             /* Sets a border */
+    border-radius: 5px;                         /* Rounds the corners */
+    box-sizing: border-box;                     /* Ensures that padding and border are included in the total width */
+}
+
+/* Style the Date input field */
+input[type="date"] {
+    width: 100px; /* Sets the width of the input field */
+    background-color: lightgoldenrodyellow; /* Changes the background color */
+}
+
+
+
+/* Pseudo-element to show a tooltip-like message for required fields */
+label::after {
+    content: " (Required)"; /* Text content for the pseudo-element */
+    color: red; /* Text color */
+    font-size: 14px; /* Font size */
+    font-weight: normal; /* Normal font weight */
+    margin-left: 5px; /* Space between the label and tooltip */
+    vertical-align: middle; /* Align with the label */
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/* Style the Time input field */
+input[type="time"] {
+    width: 100px; /* Sets the width of the input field */
+    background-color: lightgoldenrodyellow;/* Changes the background color */
+}
+
+/* Style the Number input field */
+input[type="number"] {
+    width: 100px; /* Sets the width of the input field */
+    background-color: lightgoldenrodyellow; /* Changes the background color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="submit"] {
+    background-color:gold;                   /* gold background color */
+    color: black;                            /* Sets the button text to black */
+    border: none;                              /* Removes default border */
+    padding: 12px;                             /* Adds space inside the button */
+    border-radius: 5px;                        /* Rounds the corners */
+    cursor: pointer;                           /* Pointer cursor to indicate clickability */
+    font-size: 16px;                           /* Sets font size */
+    width: 100%;                               /* Full width to match other input fields */
+    text-align: center;                        /* Centers the text inside the button */
+}
+
+/* Hover state */
+input[type="submit"]:hover {
+    background-color: darkorange;      /* Change background to dark orange on hover */
+    color: white;                      /* Change text color to white */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Active state */
+input[type="submit"]:active {
+    background-color: #e69500; /* Slightly darker shade of orange when pressed */
+    color: white; /* Keeps text color white */
+}

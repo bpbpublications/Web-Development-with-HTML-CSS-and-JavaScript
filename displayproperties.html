@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Base styles for all lists */
+.container {
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+li {
+  background-color: lightcoral;
+  margin: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+/* Block-level list items */
+.block-list li {
+  display: block;
+}
+
+/* Inline-level list items */
+.inline-list li {
+  display: inline;
+}
+
+/* Inline-block list items */
+.inline-block-list li {
+  display: inline-block;
+  width: 120px;
+}
+</style>
+</head>
+<body>
+
+<h1>Display Property Examples</h1>
+
+<!-- Block example -->
+<div class="container block-list">
+  <h2>Block Elements</h2>
+  <ul>
+    <li>Block Item 1</li>
+    <li>Block Item 2</li>
+    <li>Block Item 3</li>
+  </ul>
+</div>
+
+<!-- Inline example -->
+<div class="container inline-list">
+  <h2>Inline Elements</h2>
+  <ul>
+    <li>Inline Item 1</li>
+    <li>Inline Item 2</li>
+    <li>Inline Item 3</li>
+  </ul>
+</div>
+
+<!-- Inline-block example -->
+<div class="container inline-block-list">
+  <h2>Inline-Block Elements</h2>
+  <ul>
+    <li>Inline-Block Item 1</li>
+    <li>Inline-Block Item 2</li>
+    <li>Inline-Block Item 3</li>
+  </ul>
+ </div>
+
+</body>
+</html>

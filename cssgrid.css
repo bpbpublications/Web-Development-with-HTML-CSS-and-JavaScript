@@ -1,0 +1,57 @@
+/* Basic styling for the entire page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container grid layout */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+    grid-template-rows: auto auto auto auto;    /* 4 rows */
+}
+
+/* Header styling */
+header {
+    background-color: orange;
+    grid-column: 1 / 5; /* Span all 4 columns */
+    grid-row: 1 / 2;    /* Occupy the first row */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: gold;
+    grid-column: 1 / 5; /* Span all 4 columns */
+    grid-row: 2 / 3;    /* Occupy the second row */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Main content area styling */
+main { 
+    grid-column: 1 / 4; /* Span columns 1 to 3 */
+    grid-row: 3 / 4;    /* Occupy the third row */
+    padding: 20px;
+}
+
+/* Sidebar styling */
+aside {
+    background-color: lightgoldenrodyellow; 
+    grid-column: 4 / 5; /* Occupy column 4 */
+    grid-row: 3 / 4;    /* Occupy the third row */
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: orange;
+    grid-column: 1 / 5; /* Span all 4 columns */
+    grid-row: 4 / 5;    /* Occupy the fourth row */
+    text-align: center;
+    padding: 20px;
+}
+

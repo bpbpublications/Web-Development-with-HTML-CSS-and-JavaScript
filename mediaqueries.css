@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: orange;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Footer Specific Styling */
+footer {
+  clear: both; /* Ensure footer clears any floated elements */
+}
+
+/* Navigation */
+nav {
+  background-color: yellow;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Sidebar */
+aside {
+  text-align: center;
+}
+
+/* Responsive video */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Table Styling */
+table {
+  width: 80%;                /* Set the width of the table */
+  border-collapse: collapse; /* Merge table cell borders */
+  margin: 20px auto;         /* Center the table */
+  background-color: #f8f8f8; /* Light background color */
+}
+
+/* Table Headers */
+table th {
+  background-color: orange; /* Header background color */
+  color: white;             /* Header text color */
+  padding: 12px 15px;       /* Padding inside header cells */
+  text-align: center;       /* Center-align header text */
+  font-size: 16px;          /* Header font size */
+}
+
+/* Table Rows */
+table td {
+  padding: 10px 12px;       /* Padding inside table cells */
+  border: 1px solid #ddd;   /* Cell borders */
+  text-align: center;       /* Center-align cell text */
+  font-size: 14px;          /* Table cell font size */
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 576px) {
+  main, aside {
+      padding: 10px;
+      width: 100%;
+      float: none; /* Stack the main content and sidebar vertically */
+  }
+
+  nav {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  header, footer {
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  main {
+      padding: 15px;
+      width: 70%;
+      float: left;
+  }
+  
+  aside {
+      padding: 15px;     
+      width: 30%;
+      float: right;
+  }
+
+  video {
+    width: 100%
+}
+}
+
+/* Media query for desktops */
+@media only screen and (min-width: 992px) {
+  main {
+      padding: 15px;
+      width: 60%;
+      float: left;
+  }
+  
+  aside {
+      padding: 15px;
+      width: 40%;
+      float: right;
+  }
+
+  header, footer {
+      padding: 20px; /* Increase padding for larger screens */
+  }
+
+  nav {
+      padding: 15px;
+  }
+
+  video {
+      width: 66%
+  }
+}
